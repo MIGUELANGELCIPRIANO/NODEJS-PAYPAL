@@ -65,7 +65,7 @@ export const createOrder = async (req, res) => {
 export const captureOrder = async (req, res) => {
 	try {
 		const { token } = req.query
-		const response = await axios.post(
+		await axios.post(
 			`${PAYPAL_API}/v2/checkout/orders/${token}/capture`,
 			{},
 			{
@@ -75,12 +75,12 @@ export const captureOrder = async (req, res) => {
 				},
 			}
 		)
-		res.status(200).json(response.data)
+		res.redirect('/payed.html')
 	} catch (error) {
 		res.status(500).json({ message: error.message })
 	}
 }
 
 export const cancelOrder = (req, res) => {
-	res.send('cancel order')
+	res.redirect('/')
 }

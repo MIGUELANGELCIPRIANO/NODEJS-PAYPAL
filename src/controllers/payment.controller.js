@@ -1,5 +1,10 @@
 import axios from 'axios'
-import { PAYPAL_API, PAYPAL_API_CLIENT, PAYPAL_API_SECRET } from '../config'
+import {
+	PAYPAL_API,
+	PAYPAL_API_CLIENT,
+	PAYPAL_API_SECRET,
+	HOST,
+} from '../config'
 
 export const createOrder = async (req, res) => {
 	try {
@@ -18,8 +23,8 @@ export const createOrder = async (req, res) => {
 				brand_name: 'sumocompany',
 				landing_page: 'LOGIN',
 				user_action: 'PAY_NOW',
-				return_url: 'http://localhost:4000/capture-order',
-				cancel_url: 'http://localhost:4000/cancel-order',
+				return_url: `${HOST}/capture-order`,
+				cancel_url: `${HOST}/cancel-order`,
 			},
 		}
 

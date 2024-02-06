@@ -62,8 +62,23 @@ export const createOrder = async (req, res) => {
 	}
 }
 
-export const captureOrder = (req, res) => {
-	res.send('capture order')
+export const captureOrder = async (req, res) => {
+	try {
+		const { token } = req.query
+		const response = await axios.post(
+			`${PAYPAL_API}/v2/checkout/orders/${token}/capture`,
+			{},
+			{
+				auth: {
+					username: PAYPAL_API_CLIENT,
+					password: PAYPAL_API_SECRET,
+				},
+			}
+		)
+		res.status(200).json(response.data)
+	} catch (error) {
+		res.status(500).json({ message: error.message })
+	}
 }
 
 export const cancelOrder = (req, res) => {

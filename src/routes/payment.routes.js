@@ -1,16 +1,16 @@
 import { Router } from 'express'
 import {
-	paymentRequest,
-	paymentCompleted,
-	paymentCanceled,
+	createOrder,
+	captureOrder,
+	cancelOrder,
 } from '../controllers/payment.controller'
 
 const router = Router()
 
-router.get('/payment-request', paymentRequest)
+router.get('/create-order', createOrder)
 
-router.get('/payment-completed', paymentCompleted)
+router.get('/capture-order', captureOrder)
 
-router.get('/payment-canceled', paymentCanceled)
+router.get('/cancel-order', cancelOrder)
 
 export default router

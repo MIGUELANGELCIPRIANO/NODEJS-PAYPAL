@@ -1,0 +1,23 @@
+body {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	background-color: #0e0d0d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.title-container {
+	text-align: center;
+}
+
+h1 {
+	color: #990110;
+	margin: 0;
+}
+
+h3 {
+	color: #fff;
+	margin: 0;
+}

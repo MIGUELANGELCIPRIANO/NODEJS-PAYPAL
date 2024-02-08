@@ -1,2 +1,13 @@
 # NODEJS-PAYPAL
-Payment via Paypal REST API integrated into a Node.js application
+
+<img width="50%" src="https://i.postimg.cc/9F50SXZh/NODEJS-PAYPAL-REST-API.png" />
+
+## INTRODUCTION
+
+## TECHNOLOGIES
+
+- Node.js
+- Express.js
+- Babel
+
+## INSTALLATION

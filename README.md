@@ -33,7 +33,7 @@ https://www.paypal.com/ar/webapps/mpp/business
 
 https://developer.paypal.com/home
 
-5. Make sure you are in "Sandbox mode".
+5. Make sure you are in "sandbox mode".
 
 <br />
 
@@ -41,7 +41,7 @@ https://developer.paypal.com/home
 
 <br />
 
-6. Go to "Testing Tools" => "Sandbox Accounts" => "Create Account" => "Create". 
+6. Go to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
 
 <br />
 
@@ -58,7 +58,7 @@ https://developer.paypal.com/home
 
 <br />
 
-9. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a name and the Sandbox account created earlier.
+9. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a name and the sandbox account created earlier.
 10. Create an .env file inside ./NODEJS-PAYPAL and replace `Client ID` and `Secret key` with the API credentials.
 
 ```js
@@ -106,27 +106,25 @@ npm run dev
 ```
 
 16. Make a POST request through an app or extension of testing API's, such as Postman or Thunder Client.
-17. Select the Auth => Basic tab and insert in the Username and Password fields the API credentials, `Client ID` and `Secret key`.
+17. Select the "Auth" => "Basic" tab and insert in the username and password fields the API credentials, `Client ID` and `Secret key`.
 
 <br />
 
-<img width="50%" src="" />
+<img width="50%" src="https://i.postimg.cc/kG02mPTy/POST-AUTH-REQUEST.png" />
 
 <br />
 
-18. Select the Body => Form-encode tab and insert in the Key and Value fields, "grant_type" and "client_credentials".
+18. Select the "Body" => "Form-encode" tab and insert in the name and value fields, "grant_type" and "client_credentials".
 
 <br />
 
-<img width="50%" src="" />
+<img width="50%" src="https://i.postimg.cc/Y0xbh7Pt/BODY-REQUEST-POST.png" />
 
 <br />
 
-19. Send the request to the URL.
+19. Send the request to the URL "http://localhost:3000/create-order".
 
-http://localhost:3000/create-order
-
-20. Once you have made your purchase through the site you can verify the transactions by logging in with your Personal and Business accounts from the following link.
+20. Once you have made your purchase through the site you can verify the transactions by logging in with your personal and business accounts from the following link.
 
 https://www.sandbox.paypal.com/signin
 

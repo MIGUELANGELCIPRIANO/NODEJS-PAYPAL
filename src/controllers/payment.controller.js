@@ -4,6 +4,7 @@ import {
 	PAYPAL_API_CLIENT,
 	PAYPAL_API_SECRET,
 	HOST,
+	PORT,
 } from '../config'
 
 export const createOrder = async (req, res) => {
@@ -13,18 +14,18 @@ export const createOrder = async (req, res) => {
 			purchase_units: [
 				{
 					amount: {
-						currency_code: 'USD',
-						value: '20',
+						currency_code: 'JPY',
+						value: '38000',
 					},
 					description: 'Natsu Basho Tournament Ticket',
 				},
 			],
 			application_context: {
-				brand_name: 'sumocompany',
+				brand_name: 'japansumoassociation',
 				landing_page: 'LOGIN',
 				user_action: 'PAY_NOW',
-				return_url: `${HOST}/capture-order`,
-				cancel_url: `${HOST}/cancel-order`,
+				return_url: `http://${HOST}:${PORT}/capture-order`,
+				cancel_url: `http://${HOST}:${PORT}/cancel-order`,
 			},
 		}
 

@@ -35,16 +35,28 @@ https://developer.paypal.com/home
 
 5. Make sure you are in "Sandbox mode".
 
-### image
+<br />
 
-6. Go to "Testing Tools" => "Sandbox Accounts" => "Create Account" => "Create".
+<img width="50%" src="https://i.postimg.cc/fbN224CY/DEVELOPER-PAYPAL-HOME.png" />
 
-### Image
+<br />
 
-7. Create an account of type "Business (Merchant account)" assigning it a country, email and password.
+6. Go to "Testing Tools" => "Sandbox Accounts" => "Create Account" => "Create". 
+
+<br />
+
+<img width="50%" src="https://i.postimg.cc/FRK2p5FD/SANDBOX-ACCOUNT.png" />
+
+<br />
+
+7. Create an account of type "Business (Merchant account)" assigning it a fictitious country, email and password.
 8. Go to "Apps & Credentials" => "Create App".
 
-### image
+<br />
+
+<img width="50%" src="https://i.postimg.cc/2y8DLbM9/APP-ACCOUNT.png" />
+
+<br />
 
 9. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a name and the Sandbox account created earlier.
 10. Create an .env file inside ./NODEJS-PAYPAL and replace `Client ID` and `Secret key` with the API credentials.
@@ -57,13 +69,12 @@ HOST = localhost
 PORT = 3000
 ```
 
-### image
+<img width="50%" src="https://i.postimg.cc/cJL18z3B/API-CREDENTIALS.png" />
+
+<br />
 
 11. Go again to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
 12. Create an account of type "Personal (Busher account)" assigning it a fictitious country, email, password, first name, last name and paypal balance.
-
-### image
-
 13. In the payment.controller.js file located in the controllers folder replace the `country currency code`, `price`, `description` and `sandbox account name` values of the "createOrder" function with those of your created sandbox account.
 
 ```js
@@ -85,8 +96,6 @@ application_context: {
 }
 ```
 
-### image
-
 ## EXECUTION
 
 14. Use the **npm** package manager to run.
@@ -99,11 +108,19 @@ npm run dev
 16. Make a POST request through an app or extension of testing API's, such as Postman or Thunder Client.
 17. Select the Auth => Basic tab and insert in the Username and Password fields the API credentials, `Client ID` and `Secret key`.
 
-### image
+<br />
+
+<img width="50%" src="" />
+
+<br />
 
 18. Select the Body => Form-encode tab and insert in the Key and Value fields, "grant_type" and "client_credentials".
 
-### image
+<br />
+
+<img width="50%" src="" />
+
+<br />
 
 19. Send the request to the URL.
 

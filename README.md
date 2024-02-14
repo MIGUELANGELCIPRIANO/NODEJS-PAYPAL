@@ -58,7 +58,7 @@ https://developer.paypal.com/home
 
 <br />
 
-9. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a name and the sandbox account created earlier.
+9. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a fictitious name and the sandbox account created earlier.
 10. Create an .env file inside ./NODEJS-PAYPAL and replace `Client ID` and `Secret key` with the API credentials.
 
 ```js
@@ -68,6 +68,7 @@ PAYPAL_API_SECRET = 'Secret key'
 HOST = localhost
 PORT = 3000
 ```
+<br />
 
 <img width="50%" src="https://i.postimg.cc/cJL18z3B/API-CREDENTIALS.png" />
 
@@ -123,7 +124,6 @@ npm run dev
 <br />
 
 19. Send the request to the URL "http://localhost:3000/create-order".
-
 20. Once you have made your purchase through the site you can verify the transactions by logging in with your personal and business accounts from the following link.
 
 https://www.sandbox.paypal.com/signin

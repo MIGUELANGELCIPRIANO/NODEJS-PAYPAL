@@ -4,7 +4,7 @@
 
 body {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	background-image: url('https://i.postimg.cc/RVgFc15G/Japanese-Background.jpg');
+	background-image: url('https://i.postimg.cc/MZ98r2jF/TOKYO-NIGHT-BACKGROUND.jpg');
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -23,21 +23,22 @@ a {
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none; 
+	display: flex;
+	align-items: center;
+	text-decoration: none;
 }
 
 .favicon-link {
-    width: 40px;
-    height: 40px;
-    margin-right: 2.5px; 
+	width: 40px;
+	height: 40px;
+	margin-right: 2.5px;
 	margin-bottom: -2.5px;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
+	
+	display: flex;
+	flex-direction: column;
 }
 
 .upper {
@@ -91,8 +92,8 @@ h3 {
 }
 
 .favicon-footer {
-    width: 30px;
-    height: 30px;
-	margin-right: 0.5px; 
-    margin-bottom: -8px; 
+	width: 30px;
+	height: 30px;
+	margin-right: 0.5px;
+	margin-bottom: -8px;
 }

@@ -63,18 +63,14 @@ a {
 
 .border {
 	background-color: #ffffff;
-	padding: 14px 0px 12px 0px;
+	padding: 12px 0px 14px;
 }
 
 .cube {
 	transition: all 0.3s;
 	transform-style: preserve-3d;
 	width: 200px;
-	height: 20px;
-}
-
-.button:hover {
-	border-color: #ffffff;
+	height: 47px;
 }
 
 .button:hover .cube {
@@ -95,15 +91,15 @@ a {
 }
 
 .top {
-	background: #222229f5;
+	background: #222229;
 	color: #ffffff;
-	transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+	transform: rotateX(-90deg) translateZ(23.5px);
 }
 
 .front {
-	background: #b91515f5;
+	background: #b91515;
 	color: #ffffff;
-	transform: translate3d(0, 0, 1em);
+	transform: translateZ(23.5px);
 }
 
 .footer {

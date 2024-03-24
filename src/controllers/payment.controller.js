@@ -14,14 +14,14 @@ export const createOrder = async (req, res) => {
 			purchase_units: [
 				{
 					amount: {
-						currency_code: 'JPY',
-						value: '38000',
+						currency_code: 'USD',
+						value: '10',
 					},
-					description: 'Natsu Basho Tournament Ticket',
+					description: 'MTG Arena Premier Championship Ticket',
 				},
 			],
 			application_context: {
-				brand_name: 'japansumoassociation',
+				brand_name: 'magicthegathering',
 				landing_page: 'LOGIN',
 				user_action: 'PAY_NOW',
 				return_url: `http://${HOST}:${PORT}/capture-order`,

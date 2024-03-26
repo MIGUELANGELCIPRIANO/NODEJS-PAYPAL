@@ -1,124 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Revolution&family=Rampart+One&display=swap');
-
 body {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	background-image: url('https://i.postimg.cc/MZ98r2jF/TOKYO-NIGHT-BACKGROUND.jpg');
+	background: url(./images/background_index.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: 50% 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+	padding: 0;
 }
 
-a {
-	color: #fff;
+.header-logo {
 	position: absolute;
-	top: 50px;
-	left: 50px;
-}
-
-.footer,
-a {
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-}
-
-.logo-link {
+	top: 30px;
+	left: 30px;
 	display: flex;
-	align-items: center;
-	text-decoration: none;
-}
-
-.favicon-link {
-	width: 70px;
-	height: 70px;
-	margin-right: 2.5px;
-	margin-bottom: -2.5px;
-}
-
-.text-container {
-	display: flex;
-	flex-direction: column;
-}
-
-.upper {
-	font-family: 'Rampart One', sans-serif;
-	font-size: 32px;
-	margin-bottom: -25px;
-}
-
-.lower {
-	font-family: 'Oswald', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 20px;
-}
-
-.button {
-	display: flex;
-	border: 3px #ffffff solid;
-	width: fit-content;
-	height: fit-content;
 	cursor: pointer;
+	transition: 0.5s;
+	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
 }
 
-.cube {
+.header-logo:hover {
+	filter: drop-shadow(0px 0px 5px rgb(255, 0, 0));
+}
+
+.glowbutton {
+	--glow-color: rgb(176, 252, 255);
+	--glow-spread-color: rgba(123, 251, 255, 0.781);
+	--enhanced-glow-color: rgb(206, 255, 255);
+	--btn-color: rgb(61, 127, 136);
+	border: 2px solid var(--glow-color);
+	padding: 8px 24px;
+	color: rgb(255, 255, 255);
+	font-family: 'Beleren SmallCaps Bold';
+	font-size: 25px;
+	background-color: var(--btn-color);
+	border-radius: 10px;
+	outline: none;
+	box-shadow:
+		0 0 16px 4px var(--glow-color),
+		0 0 64px 16px var(--glow-spread-color),
+		inset 0 0 12px 4px var(--glow-color);
+	text-shadow: 0 0 5px rgb(0, 0, 0);
+	position: relative;
+	cursor: pointer;
 	transition: all 0.3s;
-	transform-style: preserve-3d;
-	width: 220px;
-	height: 54px;
 }
 
-.button:hover .cube {
-	transform: rotateX(90deg);
+.glowbutton:hover {
+	background-color: var(--glow-color);
+	box-shadow:
+		0 0 16px 4px var(--glow-color),
+		0 0 64px 32px var(--glow-spread-color),
+		inset 0 0 12px 4px var(--glow-color);
 }
 
-.side {
-	position: absolute;
-	height: 54px;
-	width: 220px;
-	display: flex;
-	font-size: 0.9em;
-	justify-content: center;
-	align-items: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	font-weight: bold;
+.glowbutton:active {
+	box-shadow:
+		0 0 10px 4px var(--glow-color),
+		0 0 40px 32px var(--glow-spread-color),
+		inset 0 0 8px 4px var(--glow-color);
 }
 
-.top {
-	background: #222229;
-	color: #ffffff;
-	transform: rotateX(-90deg) translateZ(27px);
-}
-
-.front {
-	background: #b91515;
-	color: #ffffff;
-	transform: translateZ(27px);
-}
-
-.footer {
+footer {
+	text-shadow: 0 0 5px rgb(0, 0, 0);
 	position: fixed;
-	bottom: 20px;
+	bottom: 15px;
 	width: 100%;
 	text-align: center;
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 12px;
 }
 
-.bottom {
-	font-family: 'Rampart One', sans-serif;
-	font-size: 32px;
-}
-
-.favicon-footer {
-	width: 45px;
-	height: 45px;
-	margin-right: 0.5px;
-	margin-bottom: -8px;
+.footer-logo {
+	filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+	margin-bottom: -10px;
 }

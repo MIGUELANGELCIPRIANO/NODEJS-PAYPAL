@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Revolution&family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rampart+One&display=swap');
-
 body {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	background-image: url('https://i.postimg.cc/MZ98r2jF/TOKYO-NIGHT-BACKGROUND.jpg');
+	background-image: url(./images/background_payed.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: 50% 20%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,93 +11,47 @@ body {
 	margin: 0;
 }
 
-a {
-	color: #fff;
+.header-logo {
 	position: absolute;
-	top: 50px;
-	left: 50px;
-}
-
-.logo-link {
+	top: 30px;
+	left: 30px;
 	display: flex;
-	align-items: center;
-	text-decoration: none;
+	cursor: pointer;
+	transition: 0.5s;
+	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
 }
 
-.favicon-link {
-	width: 70px;
-	height: 70px;
-	margin-right: 2.5px;
-	margin-bottom: -2.5px;
+.header-logo:hover {
+	filter: drop-shadow(0px 0px 5px rgb(255, 0, 0));
 }
 
-.text-container {
-	display: flex;
-	flex-direction: column;
-}
-
-h1,
-h3,
-.upper,
-.lower,
-.footer,
-a {
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-}
-
-.upper {
-	font-family: 'Rampart One', sans-serif;
-	font-size: 32px;
-	margin-bottom: -25px;
-}
-
-.lower {
-	font-family: 'Oswald', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 20px;
-}
-
-.title-container {
-	text-align: center;
-}
-
-h1 {
-	font-family: 'Rampart One', sans-serif;
-	font-weight: 400;
-	font-style: normal;
+.response {
+	font-family: 'Beleren SmallCaps Bold';
 	color: #fff;
-	margin: 0;
-	font-size: 70px;
+	font-size: 60px;
+	text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
-h3 {
-	font-family: 'Protest Revolution', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #fff;
-	margin: 0;
-	font-size: 40px;
+.mana-colors img {
+	color: #ffffff;
+	width: 30px;
+	height: auto;
+	display: inline-block;
+	margin-right: 10px;
+	filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
 }
 
-.footer {
+footer {
+	text-shadow: 0 0 5px rgb(0, 0, 0);
 	position: fixed;
-	bottom: 20px;
+	bottom: 15px;
 	width: 100%;
 	text-align: center;
-	color: #fff;
-	font-size: 13px;
+	color: #ffffff;
+	font-size: 12px;
 }
 
-.bottom {
-	font-family: 'Rampart One', sans-serif;
-	font-size: 32px;
-}
-
-.favicon-footer {
-	width: 45px;
-	height: 45px;
-	margin-right: 0.5px;
-	margin-bottom: -8px;
+.footer-logo {
+	filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+	margin-bottom: -10px;
 }

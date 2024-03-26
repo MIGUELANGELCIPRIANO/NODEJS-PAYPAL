@@ -20,6 +20,7 @@
 		"prettier": "3.2.5"
 	},
 	"dependencies": {
+		"@saeris/typeface-beleren-bold": "^1.0.1",
 		"axios": "^1.6.7",
 		"cors": "^2.8.5",
 		"dotenv": "^16.4.1",

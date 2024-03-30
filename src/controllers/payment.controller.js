@@ -76,7 +76,7 @@ export const captureOrder = async (req, res) => {
 				},
 			}
 		)
-		res.redirect('/payed.html')
+		res.redirect('/payment.html')
 	} catch (error) {
 		res.status(500).json({ message: error.message })
 	}

@@ -1,57 +1,79 @@
+html,
 body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	background-image: url(./images/duels_of_the_planeswalkers.jpg);
-	background-size: cover;
-	background-position: 50% 20%;
+}
+
+body {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
+	min-height: 100vh;
+	background: url(./images/duels_of_the_planeswalkers.jpg) no-repeat center
+		center fixed;
+	background-size: cover;
+	background-position: 50% 20%;
+}
+
+.header,
+.main-content,
+.footer {
+	flex-shrink: 0;
+	width: 100%;
 }
 
 .header-logo {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	display: flex;
+	margin: 2rem; /* 32px */
+	width: 15rem; /* 240px */
+	height: auto;
 	cursor: pointer;
-	transition: 0.5s;
-	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	transition: all 0.3s;
+	filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
 .header-logo:hover {
 	filter: drop-shadow(0px 0px 5px rgb(255, 0, 0));
 }
 
+.main-content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .response {
 	font-family: 'Beleren SmallCaps Bold';
 	color: #fff;
-	font-size: 60px;
+	font-size: 3.75rem; /* 60px */
 	text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .mana-colors img {
 	color: #ffffff;
-	width: 30px;
+	width: 1.875rem; /* 30px */
 	height: auto;
-	display: inline-block;
-	margin-right: 10px;
+	margin-right: 0.625rem; /* 10px */
 	filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+}
+
+.footer {
+	text-align: center;
+	margin-top: 3.125rem; /* 50px */
 }
 
 footer {
 	text-shadow: 0 0 5px rgb(0, 0, 0);
-	position: fixed;
 	bottom: 15px;
-	width: 100%;
 	text-align: center;
 	color: #ffffff;
-	font-size: 12px;
+	font-size: 0.75rem; /* 12px */
+	margin-bottom: 1.5rem; /* 24px */
 }
 
 .footer-logo {
-	filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+	filter: drop-shadow(0 0 10px rgb(0 0 0));
 	margin-bottom: -10px;
 }

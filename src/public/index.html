@@ -13,36 +13,42 @@
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<a href="/">
-			<img
-				src="./images/magic_the_gathering.webp"
-				alt="magic_the_gathering"
-				class="header-logo"
-			/>
-		</a>
-		<button class="glowbutton">checkout</button>
-		<script>
-			const checkoutButton = document.querySelector('.glowbutton')
-			checkoutButton.addEventListener('click', async () => {
-				const response = await fetch('/create-order', {
-					method: 'POST',
+		<div class="header">
+			<a href="/">
+				<img
+					src="./images/magic_the_gathering.webp"
+					alt="magic_the_gathering"
+					class="header-logo"
+				/>
+			</a>
+		</div>
+		<div class="main-content">
+			<button class="glowbutton">checkout</button>
+			<script>
+				const checkoutButton = document.querySelector('.glowbutton')
+				checkoutButton.addEventListener('click', async () => {
+					const response = await fetch('/create-order', {
+						method: 'POST',
+					})
+					const data = await response.json()
+					window.location.href = data.links[1].href
 				})
-				const data = await response.json()
-				window.location.href = data.links[1].href
-			})
-		</script>
-		<footer>
-			<img
-				src="./images/wizards_of_the_coast.png"
-				alt="wizards_of_the_coast"
-				class="footer-logo"
-			/>
-			<div>
-				Copyright © 1993-2024 Wizards of the Coast LLC, a subsidiary of Hasbro,
-				Inc.
-			</div>
-			<div>Copyright © 2018 Drake Costa</div>
-			<div>All Rights Reserved.</div>
-		</footer>
+			</script>
+		</div>
+		<div class="footer">
+			<footer>
+				<img
+					src="./images/wizards_of_the_coast.png"
+					alt="wizards_of_the_coast"
+					class="footer-logo"
+				/>
+				<div>
+					Copyright © 1993-2024 Wizards of the Coast LLC, a subsidiary of
+					Hasbro, Inc.
+				</div>
+				<div>Copyright © 2018 Drake Costa</div>
+				<div>All Rights Reserved.</div>
+			</footer>
+		</div>
 	</body>
 </html>

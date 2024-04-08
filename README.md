@@ -1,6 +1,6 @@
 # NODEJS-PAYPAL
 
-<img width="50%" src="https://i.postimg.cc/9F50SXZh/NODEJS-PAYPAL-REST-API.png" />
+<img width="50%" src="./src/public/images/nodejs_paypal_restapi.png" />
 
 ## INTRODUCTION
 
@@ -68,6 +68,7 @@ PAYPAL_API_SECRET = 'Secret key'
 HOST = localhost
 PORT = 3000
 ```
+
 <br />
 
 <img width="50%" src="https://i.postimg.cc/cJL18z3B/API-CREDENTIALS.png" />

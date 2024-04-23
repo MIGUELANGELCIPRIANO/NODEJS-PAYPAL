@@ -130,3 +130,7 @@ npm run dev
 https://www.sandbox.paypal.com/signin
 
 21. Modify the .html and .css files located in the public folder for the new page layout.
+
+Copyright © 1993-2024 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. <br />
+Copyright © 2018 Drake Costa. <br />
+All Rights Reserved.

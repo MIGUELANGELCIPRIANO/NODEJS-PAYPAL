@@ -1,6 +1,6 @@
 # NODEJS-PAYPAL
 
-<img width="50%" src="./src/public/images/nodejs_paypal_restapi.png" />
+<img width="50%" src="./src/public/images/nodejs_paypal_template.png" />
 
 ## INTRODUCTION
 
@@ -37,7 +37,7 @@ https://developer.paypal.com/home
 
 <br />
 
-<img width="50%" src="https://i.postimg.cc/fbN224CY/DEVELOPER-PAYPAL-HOME.png" />
+<img width="50%" src="./src/public/images/developer_paypal_home.png" />
 
 <br />
 
@@ -45,7 +45,7 @@ https://developer.paypal.com/home
 
 <br />
 
-<img width="50%" src="https://i.postimg.cc/FRK2p5FD/SANDBOX-ACCOUNT.png" />
+<img width="50%" src="./src/public/images/sandbox_account.png" />
 
 <br />
 
@@ -54,7 +54,7 @@ https://developer.paypal.com/home
 
 <br />
 
-<img width="50%" src="https://i.postimg.cc/2y8DLbM9/APP-ACCOUNT.png" />
+<img width="50%" src="./src/public/images/app_account.png" />
 
 <br />
 
@@ -71,7 +71,7 @@ PORT = 3000
 
 <br />
 
-<img width="50%" src="https://i.postimg.cc/cJL18z3B/API-CREDENTIALS.png" />
+<img width="50%" src="./src/public/images/api_credentials.png" />
 
 <br />
 
@@ -112,7 +112,7 @@ npm run dev
 
 <br />
 
-<img width="50%" src="https://i.postimg.cc/kG02mPTy/POST-AUTH-REQUEST.png" />
+<img width="50%" src="./src/public/images/post_auth_request.png" />
 
 <br />
 
@@ -120,7 +120,7 @@ npm run dev
 
 <br />
 
-<img width="50%" src="https://i.postimg.cc/Y0xbh7Pt/BODY-REQUEST-POST.png" />
+<img width="50%" src="./src/public/images/body_request_post.png" />
 
 <br />
 

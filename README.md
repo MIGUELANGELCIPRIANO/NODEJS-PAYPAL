@@ -19,21 +19,22 @@ We will create a business account and a user account to make a payment order, ca
 
 https://nodejs.org/en
 
-2. Execute the command from the terminal located at ./NODEJS-PAYPAL.
+2. Use the **npm** package manager to install.
+3. Execute the command from the terminal located at ./NODEJS-PAYPAL.
 
 ```shell
 npm i
 ```
 
-3. Create a **PayPal** account through the following link.
+4. Create a **PayPal** account through the following link.
 
 https://www.paypal.com/ar/webapps/mpp/business
 
-4. Login with your account through the following link.
+5. Login with your account through the following link.
 
 https://developer.paypal.com/home
 
-5. Make sure you are in "sandbox mode".
+6. Make sure you are in "sandbox mode".
 
 <br />
 
@@ -41,7 +42,7 @@ https://developer.paypal.com/home
 
 <br />
 
-6. Go to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
+7. Go to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
 
 <br />
 
@@ -49,8 +50,8 @@ https://developer.paypal.com/home
 
 <br />
 
-7. Create an account of type "Business (Merchant account)" assigning it a fictitious country, email and password.
-8. Go to "Apps & Credentials" => "Create App".
+8. Create an account of type "Business (Merchant account)" assigning it a fictitious country, email and password.
+9. Go to "Apps & Credentials" => "Create App".
 
 <br />
 
@@ -58,8 +59,8 @@ https://developer.paypal.com/home
 
 <br />
 
-9. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a fictitious name and the sandbox account created earlier.
-10. Create an .env file inside ./NODEJS-PAYPAL and replace `Client ID` and `Secret key` with the API credentials.
+10. Create an account of type "Merchant (Accept payments as merchant (seller))" by assigning it a fictitious name and the sandbox account created earlier.
+11. Create an .env file inside ./NODEJS-PAYPAL and replace `Client ID` and `Secret key` with the API credentials.
 
 ```js
 PAYPAL_API = 'https://api-m.sandbox.paypal.com'
@@ -75,9 +76,9 @@ PORT = 3000
 
 <br />
 
-11. Go again to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
-12. Create an account of type "Personal (Busher account)" assigning it a fictitious country, email, password, first name, last name and paypal balance.
-13. In the payment.controller.js file located in the controllers folder replace the `country currency code`, `price`, `description` and `sandbox account name` values of the "createOrder" function with those of your created sandbox account.
+12. Go again to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
+13. Create an account of type "Personal (Busher account)" assigning it a fictitious country, email, password, first name, last name and paypal balance.
+14. In the payment.controller.js file located in the controllers folder replace the `country currency code`, `price`, `description` and `sandbox account name` values of the "createOrder" function with those of your created sandbox account.
 
 ```js
 purchase_units: [
@@ -100,15 +101,15 @@ application_context: {
 
 ## EXECUTION
 
-14. Use the **npm** package manager to run.
-15. Execute the command from the terminal located at ./NODEJS-PAYPAL.
+15. Use the **npm** package manager to run.
+16. Execute the command from the terminal located at ./NODEJS-PAYPAL.
 
 ```shell
 npm run dev
 ```
 
-16. Make a POST request through an app or extension of testing API's, such as Postman or Thunder Client.
-17. Select the "Auth" => "Basic" tab and insert in the username and password fields the API credentials, `Client ID` and `Secret key`.
+17. Make a POST request through an app or extension of testing API's, such as Postman or Thunder Client.
+18. Select the "Auth" => "Basic" tab and insert in the username and password fields the API credentials, `Client ID` and `Secret key`.
 
 <br />
 
@@ -116,7 +117,7 @@ npm run dev
 
 <br />
 
-18. Select the "Body" => "Form-encode" tab and insert in the name and value fields, "grant_type" and "client_credentials".
+19. Select the "Body" => "Form-encode" tab and insert in the name and value fields, "grant_type" and "client_credentials".
 
 <br />
 
@@ -124,8 +125,8 @@ npm run dev
 
 <br />
 
-19. Send the request to the URL "http://localhost:3000/create-order".
-20. Once you have made your purchase through the site you can verify the transactions by logging in with your personal and business accounts from the following link.
+20. Send the request to the URL "http://localhost:3000/create-order".
+21. Once you have made your purchase through the site you can verify the transactions by logging in with your personal and business accounts from the following link.
 
 https://www.sandbox.paypal.com/signin
 

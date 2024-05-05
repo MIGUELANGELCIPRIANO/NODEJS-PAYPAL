@@ -129,8 +129,6 @@ npm run dev
 
 https://www.sandbox.paypal.com/signin
 
-21. Modify the .html and .css files located in the public folder for the new page layout.
-
 ## LICENSE
 
 All fonts are copyright of [Wizards of the Coast](http://magicthegathering.com).

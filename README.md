@@ -4,7 +4,7 @@
 
 ## INTRODUCTION
 
-In this project we will create a **Node.js** application integrating the **Paypal** payment method through its REST API service for developers.
+In this project we will create a **Node.js** application integrating the **PayPal** payment method through its REST API service for developers.
 We will create a business account and a user account to make a payment order, capture it and cancel it if we want.
 
 ## TECHNOLOGIES
@@ -77,7 +77,7 @@ PORT = 3000
 <br />
 
 12. Go again to "Testing Tools" => "Sandbox Accounts" => "Create account" => "Create".
-13. Create an account of type "Personal (Busher account)" assigning it a fictitious country, email, password, first name, last name and paypal balance.
+13. Create an account of type "Personal (Busher account)" assigning it a fictitious country, email, password, first name, last name and PayPal balance.
 14. In the payment.controller.js file located in the controllers folder replace the `country currency code`, `price`, `description` and `sandbox account name` values of the "createOrder" function with those of your created sandbox account.
 
 ```js
